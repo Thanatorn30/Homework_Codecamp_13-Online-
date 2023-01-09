@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            /* display: inline-block; */
+            text-align: left;
+            border: 1px solid red;
+            width: 300px;
+           
+        }
+        .flying{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        
+            <div class="flying">
+                <div class="to">
+                    <label for="start">Flying From</label><br>
+                    <select id="cars" name="cars">
+                        <option value="thailand">Thailand</option>
+                        <option value="japan">Japan</option>
+                        <option value="korea">Korea</option>
+                        <option value="italy">Italy</option>
+                    </select>
+                </div>
+                <div class="to">
+                    <label for="start">To</label><br>
+                    <select id="cars" name="cars">
+                        <option value="thailand">Thailand</option>
+                        <option value="japan">Japan</option>
+                        <option value="korea">Korea</option>
+                        <option value="italy">Italy</option>
+                    </select>
+                </div>
+            </div><br>
+            
+            <div class="date flying">
+                <div class="departing">
+                    <label for="start">Departing</label><br>
+                    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                </div>
+                <div class="return">
+                    <label for="start">Return</label><br>
+                    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                </div>
+            </div><br>
+            <div class="person flying">
+                <label for="start">Adult</label><br>
+                <select id="person" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+                <label for="start">Child</label><br>
+                <select id="person" name="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+                <label for="start">Currency</label><br>
+                <select id="Currency" name="number">
+                    <option value="thb">THB</option>
+                    <option value="usd">USD</option>
+                    <option value="sgd">SGD</option>
+                    <option value="vnd">VND</option>
+                </select>
+            </div><br>
+            <button class="btn">Submit</button>
+        
+    </div>
+</body>
+</html>

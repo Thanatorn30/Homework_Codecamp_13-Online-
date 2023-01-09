@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ------------- Object Declaration -----------
+        // -----------------Lab1-----------------
+        // * ให้ผลเป็น name:'Pepsi' , price: '19' , size: '500ml'
+        // ** ให้ผลเป็น name:'Pepsi' , price: '19' , size: '500ml' เหมือนกับ a เพราะ copy by reference
+        // *** ให้ผลเป็น true
+        // let user1 = {
+        //     name : 'peet',
+        //     age : 27
+        // }
+        // let user2 = {
+        //     gender : 'Male',
+        //     address : 'Thailand'
+        // }
+        // let user3 = Object.assign({},user1,user2)
+        // console.log(user3);
+        // console.log(user1 ===user3);
+
+        // ------------- Property -----------
+        // -----------------Lab1-----------------
+        // *ให้ผลเป็น object { email: 'cc@gmail.com',isActive: false};      
+        //  ** ให้ผลเป็น Error เพราะ object ไม่สามารถกำหนดค่าโดยวิธีนี้ได้
+
+        // -----------------Lab2-----------------
+        // let  user = {
+        //     name: 'John',
+        //     surname : 'Doe',
+        // }
+        // user.name = 'Matt';
+        // delete user.name
+        // console.log(user);
+            // let username = prompt('Username');
+            // let email = prompt('Email ?');
+            // let password = prompt('Password')
+            
+            // let user = {};
+            // user.name = username;
+            // user.email = email;
+            // user.password = password;
+            
+
+
+        // ------------- Loop through Object -----------
+        // -------------------Lab1------------------
+        
+        // function check(obj){
+        //     for(let key in obj){
+        //         return true
+        //     }
+        //     return false
+        // }
+        // let obj = { age : 27 }
+        // let obj1 ={}
+        // console.log(check(obj1));
+
+        // // -------------------Lab2------------------
+        // let salaries = {
+        //         John: 100,
+        //         Ann: 160,
+        //         Pete: 130
+        // };
+        // function cal(salaries){
+        //     let sum = 0;
+        //     for(let key in salaries){
+        //         sum += salaries[key]
+        //     }
+        //     return sum
+        // }
+        // console.log(cal(salaries));
+
+        // -------------------Lab3------------------
+        // let menu = {
+        //     width: 200,
+        //     height: 300,
+        //     title: 'My menu'
+        // };
+        // let multiplyNumeric = function(obj,number){
+        //     let menu2 = {}
+        //     for(let key in obj){
+        //         let current = obj[key];
+        //         if(isNaN(current) == false){
+        //             menu2[key] = current*number
+        //         }else{
+        //             menu2[key] = current
+        //         }
+                
+        //     }
+        //     return menu2
+        // }
+        // console.log(menu);
+        // console.log(multiplyNumeric(menu,10));
+
+        // -------------------Lab4------------------
+            // function createObj(){
+            //     let newObj = {};
+            //     let key 
+            //     let value 
+            //     let stop = 'stop'
+            //     do{
+            //         key = prompt('key ?')
+            //         value = prompt('Value ?')
+            //         if(key !== stop && value !== stop && (key !== null && value !== null)){
+            //             newObj[key] = value
+            //         }
+            //     }
+            //     while(key !== stop && value !== stop)         
+            //     return newObj;
+                
+            // }
+            // console.log(createObj());
+         
+            // -------------------Lab5------------------
+            // function fruit(){
+            //     let key;
+            //     let value;
+            //     let fruit = {};
+            //     do{
+            //         key = prompt('Fruit name ?')
+            //         value = +prompt('How many?')
+            //         if(value == 1 && value !==0){
+            //             fruit[key] = value
+            //         }
+            //         else if(value > 1 && value !==0){
+            //             fruit[`${key}s`] = value
+            //         }
+            //     }
+            //     while(value >= 1 && value !==0){
+            //         if(value == 1 && value !==0){
+            //             fruit[key] = value
+            //         }
+            //         else if(value > 1 && value !==0){
+            //             fruit[`${key}s`] = value
+            //         }
+            //     }
+            //     return fruit
+            // }
+            // console.log(fruit());
+
+            // -------------------Lab6------------------
+            // function product(){
+            //     let product = {};
+            //     let name;
+            //     let quantity;
+            //     let price;
+            //     let discount;
+    
+            //         name = prompt('name')
+            //         quantity = +prompt('จำนวน')
+            //         price = +prompt('ราคา')
+            //         discount = +prompt('Discount')
+            //         if(discount !==0 ){
+            //                 product.name = name
+            //                 product.quantity = quantity
+            //                 product.price = price
+            //                 product.discount = `${discount}%`
+            //                 // product.realPrice = function(){ price - (price * (discount/100))}
+            //         }else if(discount == 0){
+            //             product[name] = name
+            //             product[quantity] = quantity
+            //             product[price] = price
+            //         }
+            //     return product
+            // }
+            // console.log(product());
+
+        
+             // -------------------Lab7------------------
+            // const employees = {
+            //     john: { salary: 1000, address: { district: 'Ratchathewi', province: 'Bangkok' } },
+            //     peter: { salary: 1500, address: { district: 'Pathumwan', province: 'Bangkok' } },
+            //     mike: { salary: 800, address: { district: 'Pakkret', province: 'Nonthaburi' } },
+            //     sarah: { salary: 2200, address: { district: 'Sriraja', province: 'Chonburi' } }
+            // };
+            // // รับข้อมูลเป็นชื่อ
+            // // ถ้าชื่อตรงกับข้างบน ให้แสดง property
+            // // let name = prompt('What is your name?')
+            // function checkName(name){
+            //     // ไล่เช็คทีละคีย์ว่าที่ใส่มาตรงกับที่มีไหม
+            //     for(let key in employees ){
+            //         if(name == key){
+            //             console.log(`${name} : ${employees[key]}`);
+            //         }else{
+            //             alert('Not found')
+            //         }
+            //     }
+
+            // }
+            // console.log(checkName(name));
+        //    console.log(employees.peter);
+
+        // ------------- Copy By Reference -----------
+        // -------------------Lab1------------------
+        // * console.log(product1) จะได้ name: 'pepsi', price: 19, size: '500mL'  เพราะเป็นcopy by ref
+        // ** console.log(product2) จะได้ name: 'pepsi', price: 19, size: '500mL'  เพราะเป็นcopy by ref
+        // *** console.log(product1 === product2) ตอบ true
+
+        // -------------------Lab2------------------
+        // const user = { name: 'Jack', role: 'ADMIN' };
+        // const admin = { name: 'Jack', role: 'ADMIN' };
+        // console.log(user === admin); // *
+        // *จะมีค่าเป็น false เพราะ ไม่ใช่การ copy by ref
+
+        
+        // ------------- Clone Object -----------
+        // -------------------Lab1------------------
+        // const notebook = {
+        //     brand: 'ASUS',
+        //     model: 'Vivobook D413IA-EB303TS',
+        //     processor: 'AMD Ryzen 7 4700U 3.6GHz',
+        //     graphics: 'Integrated Graphics : AMD Radeon Graphics',
+        //     ram: '8GB DDR4 Onboard',
+        //     storage: '512GB PCIe NVMe M.2 SSD'
+        // };
+        // // -------for in-------
+        // let newNotebook = {}
+        // for(let key in notebook){
+        //     newNotebook[key] = notebook[key];
+        // }
+        // // -------Assign-------
+        // let notebook1 = Object.assign({},newNotebook)
+        
+        // console.log(notebook);
+        // console.log(newNotebook);
+        // console.log(notebook1);
+        
+        // -------------------Lab2------------------
+        // const state1 = { username: 'john', point: 100, loading: true };
+        // const state2 = Object.assign({},state1)
+        // state2.loading = false;
+        // state2.point = 75;
+        // state2.propertySuccess = true
+        // console.log(state2);
+
+        // -------------------Lab3------------------
+        // const permission1 = { canView: 0, canDelete: 0 };
+        // const permission2 = { canUpdate: 1, canCreate: 1 };
+        // const permission3 = { canCreate: 0, canDelete: 1 };
+        // const permission4 = { canView: 1 };
+
+        // const permission = Object.assign({},permission1,permission2,permission3,permission4)
+        // console.log(permission);
+
+
+        // ------------- this keyword -----------
+        // -------------------Lab1------------------
+        //  *ไม่แสดงผลเพราะเรียกใช้ผิด
+        // let user = {
+        //     name: 'Peet',
+        //     sayHi: function(){
+        //         console.log(this.name);
+        //     }
+        // }
+
+        // -------------------Lab2------------------
+        // var name = 'Joe';
+        // function makeUser() {
+        //     return {
+        //         name: 'John',
+        //         ref: this
+        //     };
+        // }
+        // let user = makeUser();
+        // console.log(user.ref.name); // *
+        // *.ให้ผลเป็น joe เพราะเป็นการเรัยกไปที่ window object
+
+        // -------------------Lab3------------------**********************
+    //    let cal = {
+    //         num1 : 20,
+    //         num2 : 10,
+    //         read : function(num1,num2){ console.log(this.num1,this.num2);},
+    //         sum : function(num1,num2){ console.log((this.num1)+(this.num2));},
+    //         mul : function(num1,num2){ console.log((this.num1)*(this.num2));},
+    //     }
+    //    console.log(cal.read());
+    //    console.log(cal.sum());
+    //    console.log(cal.mul());
+
+        // ------------- Constructor Function & new keyword -----------
+        // -------------------Lab1------------------
+        // function Read(num1,num2){
+        //     this.sum = num1+num2;
+        //     this.multipled = num1*num2 
+        // }
+        // let calculator = new Read(5,10);
+        // console.log(calculator);
+
+        // -------------------Lab2------------------
+       
+    </script>
+</body>
+</html>
