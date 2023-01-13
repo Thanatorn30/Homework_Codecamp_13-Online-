@@ -1,3 +1,5 @@
+ชื่อ ธนาธรณ์ ธรรมสาคร 
+
 ให้เพิ่ม Method defer เข้าไปใน Prototype ของ Function โดยให้ได้ผลลัพธ์ตามด้านล่าง (Hint: setTimeout)
 
 ```js

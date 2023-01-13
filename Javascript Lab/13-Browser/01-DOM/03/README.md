@@ -1,4 +1,6 @@
-- จงเขียนคำสั่งเพื่อ access \<li> ตัวที่สาม โดยใช้วิธีต่อไปนี้
+ชื่อ ธนาธรณ์ ธรรมสาคร 
+-
+ จงเขียนคำสั่งเพื่อ access \<li> ตัวที่สาม โดยใช้วิธีต่อไปนี้
 - querySelector
 - querySelectorAll
 - getElementById

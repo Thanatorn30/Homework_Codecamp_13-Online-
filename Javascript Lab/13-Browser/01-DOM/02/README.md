@@ -1,3 +1,4 @@
+ชื่อ ธนาธรณ์ ธรรมสาคร 
 จงเขียนคำสั่งเพื่อ access \<h2> โดยใช้วิธีต่อไปนี้
 - querySelector
 - querySelectorAll

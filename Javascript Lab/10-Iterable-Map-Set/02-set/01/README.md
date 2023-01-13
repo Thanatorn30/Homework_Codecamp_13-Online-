@@ -1,3 +1,5 @@
+ชื่อ ธนาธรณ์ ธรรมสาคร 
+
 - จงสร้าง Set เก็บไว้ในตัวแปรชื่อ set
 - เพิ่ม value เข้าไปใน set ตามลำดับดังนี้ Thailand, Japan, Thailand, China, India, Thailand, China, Singapore, Japan
 - ลบ india ออกจาก set
